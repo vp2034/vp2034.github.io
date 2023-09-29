@@ -139,9 +139,21 @@ main h3 {
 /* Call to Action Styles */
 .cta-container {
     text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    margin-top: 30px;
+    padding: 10px;
+    background-color: #FFBA7D;
+    margin: 15px;
+    font-size: 18px;
+    border: #4C9CAD;
+    border-width: 1px;
+    border-style: dashed;
+}
+.cta-container h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.cta-container p{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cta-button {
@@ -150,7 +162,7 @@ main h3 {
     background-color: #007BFF;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 19px;
     font-weight: bold;
     margin-top: 15px;
     transition: background-color 0.3s;
