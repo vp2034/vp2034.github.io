@@ -10,7 +10,7 @@ button.addEventListener('click', function() {
     return;
   }
 
-  const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
   fetch(apiUrl)
     .then(response => {
       if (!response.ok) {
@@ -19,7 +19,7 @@ button.addEventListener('click', function() {
       return response.json();
     })
     .then(data => {
-      const htmlString = '<p>The weather in ${cityName} is : ${data.weather[0].description}</p><p>The temperature is : ${data.main.temp} K</p><p>And the wind speed is : ${data.wind.speed} m/s</p>';
+      const htmlString = `<p>The weather in ${cityName} is : ${data.weather[0].description}</p><p>The temperature is : ${data.main.temp} K</p><p>And the wind speed is : ${data.wind.speed} m/s</p>`;
       weatherInfo.innerHTML = htmlString;
     })
     .catch(error => {
